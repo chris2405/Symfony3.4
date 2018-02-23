@@ -1,0 +1,53 @@
+
+@import "../css/bootstrapCSS/bootstrap.css";
+@import "animate";
+@import "../css/font.css";
+@import "mixins";
+@import "buttons";
+
+$size-icon: 40px;
+$color-black: #000;
+$color-yellow: yellow;
+$color-white:white ;
+$color-orange: #ff6f00;
+$color-yellow-fonce: #ff4d00;
+
+
+/* Mode dev*/
+[class*="col-"] {
+  //border: 2px solid $color-black;
+}
+
+body {
+  margin: 2% 7% 7% 7%;
+
+}
+.container{
+  width: 100%;
+}
+h1 {
+  color: $color-orange;
+  display: grid;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.test {
+  text-align: center;
+}
+
+.form-control {
+  margin: 0 0 0 40%;
+  text-align: center;
+  width: 21%;
+}
+
+.SubDel {
+  margin: 18px 0 0 41%;
+  text-align: center;
+  width: 228px;
+}
+
+table{
+  margin-bottom: 45px;
+}

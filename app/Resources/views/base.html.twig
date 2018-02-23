@@ -6,10 +6,10 @@
 
     {% block stylesheets %}
 
-        {#<link rel="stylesheet" href="{{ asset('css/bootstrapCSS/bootstrap.css') }}">#}
-        {#<link rel="stylesheet" href="{{ asset('css/style.css') }}">#}
+        <link rel="stylesheet" href="{{ asset('css/bootstrapCSS/bootstrap.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
-        <link rel="stylesheet" href="{{ asset('dist/styles.css') }}">
+        {#<link rel="stylesheet" href="{{ asset('dist/styles.css') }}">#}
 
     {% endblock %}
 
@@ -40,12 +40,12 @@
 
 {% block javascripts %}
 
-    {#<script src="{{ asset('js/Jquery/jquery-3.3.1.js') }}"></script>#}
-    {#<script src="{{ asset('js/Popper/popper.js') }}"></script>#}
-    {#<script type="text/javascript" src="{{ asset('js/bootstrapJS/bootstrap.js') }}"></script>#}
-    {#<script type="text/javascript" src="{{ asset('js/main.js') }}"></script>#}
+    <script src="{{ asset('js/Jquery/jquery-3.3.1.js') }}"></script>
+    <script src="{{ asset('js/Popper/popper.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/bootstrapJS/bootstrap.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
 
-    <script type="text/javascript" src="{{ asset('dist/script.js') }}"></script>
+    {#<script type="text/javascript" src="{{ asset('dist/script.js') }}"></script>#}
 
 {% endblock %}
 
