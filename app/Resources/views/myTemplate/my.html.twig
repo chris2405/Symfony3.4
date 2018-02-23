@@ -1,0 +1,41 @@
+{% extends "base.html.twig" %}
+
+{% block title %}My Page{% endblock %}
+
+{% block body %}
+
+    <h1>Tout fonctionne {{ nom }}</h1>
+    {{ form_start(form,{'method':'post','attr':{'id':'toto','novalidate':'novalidate', 'class':'myForm'}}) }} <!-- 'class':'form-inline' -->
+
+    <div class="errors">
+        {{ form_errors(form) }}
+    </div>
+
+    {#<div class="nameInput">#}
+    {#{{ form_label(form.nom) }}#}
+    {#{{ form_widget(form.nom, {'attr':{'class':'form-control','data-id':'info'}}) }}#}
+    {#{{ form_errors(form.nom) }}#}
+    {#</div>#}
+    {#<div class="prenomInput">#}
+    {#{{ form_label(form.prenom) }}#}
+    {#{{ form_widget(form.prenom) }}#}
+    {#</div>#}
+    {#<div class="dateInput">#}
+    {#{{ form_label(form.date) }}#}
+    {#{{ form_widget(form.date) }}#}
+    {#</div>#}
+
+
+    {{ form_row(form.nom) }}
+    {{ form_row(form.prenom) }}
+    {{ form_row(form.date) }}
+
+
+    <div class="SubDel">
+        {{ form_widget(form.submit) }}
+        {{ form_widget(form.delete) }}
+    </div>
+
+    {{ form_end(form) }}
+
+{% endblock %}

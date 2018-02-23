@@ -1,0 +1,6 @@
+@font-face {
+	font-family: 'UTMNeutra';
+	src: url('../fonts/UTMneutra.eot') format('eot');
+	src: local('UTMNeutra'), url('../fonts/UTMneutra.woff') format('woff'), url('../fonts/UTMneutra.ttf') format('truetype');
+}
+

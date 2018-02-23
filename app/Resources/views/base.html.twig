@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="fr">
+    <meta charset="UTF-8"/>
+    <title>{% block title %}Welcome!{% endblock %}</title>
+
+    {% block stylesheets %}
+
+        {#<link rel="stylesheet" href="{{ asset('css/bootstrapCSS/bootstrap.css') }}">#}
+        {#<link rel="stylesheet" href="{{ asset('css/style.css') }}">#}
+
+        <link rel="stylesheet" href="{{ asset('dist/styles.css') }}">
+
+    {% endblock %}
+
+</head>
+<body>
+
+<style>
+    ul > li {
+        display: inline-block;
+        padding-right: 21px;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    ul{  text-align: center;  }
+</style>
+
+<ul>
+    <li><a href="{{ path('homepage') }}">HomePage</a></li>
+    <li><a href="{{ path('my') }}">My Page</a></li>
+    <li><a href="{{ path('bootstrap') }}">bootstrap</a></li>
+    <li><a href="{{ path('test') }}">Page de Test</a></li>
+</ul>
+
+{% block body %}
+
+
+{% endblock %}
+
+{% block javascripts %}
+
+    {#<script src="{{ asset('js/Jquery/jquery-3.3.1.js') }}"></script>#}
+    {#<script src="{{ asset('js/Popper/popper.js') }}"></script>#}
+    {#<script type="text/javascript" src="{{ asset('js/bootstrapJS/bootstrap.js') }}"></script>#}
+    {#<script type="text/javascript" src="{{ asset('js/main.js') }}"></script>#}
+
+    <script type="text/javascript" src="{{ asset('dist/script.js') }}"></script>
+
+{% endblock %}
+
+
+</body>
+</html>
+
+
+

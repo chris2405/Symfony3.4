@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <h1>Liste des Entreprises</h1>
+
+        <table width=75%  border="1" cellpadding="0" cellspacing="0" style="text-align: center;margin-top : 15px;margin-left: 121px">
+        		<tr>
+        			<th scope="col">Id</th>
+        			<th scope="col">Nom de l'entreprise</th>
+        			<th scope="col">Description</th>
+        		</tr>
+            {% for entreprise in entreprises %}
+        		<tr>
+        			<td>{{ entreprise.id }}</td>
+        			<td>{{ entreprise.name }}</td>
+        			<td>{{ entreprise.description }}</td>
+        		</tr>
+            {% endfor %}
+        	</table>
+
+	<a style="margin-left: 45%;margin-top: 50px" href="{{ path('entreprise_new') }}">Ajouter une entreprise</a>
+
+{% endblock %}

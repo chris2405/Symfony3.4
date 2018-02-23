@@ -1,0 +1,29 @@
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+my:
+    resource: "@MyBundle/Controller/DefaultController.php"
+    type: annotation
+    prefix: /bootstrap
+
+test:
+    resource: "@MyBundle/Controller/TestController.php"
+    type: annotation
+    prefix: /test
+
+easy_admin_bundle:
+    resource: "@EasyAdminBundle/Controller/AdminController.php"
+    type:     annotation
+    prefix:   /admin
+
+
+
+
+
+
+
+
+
+
+

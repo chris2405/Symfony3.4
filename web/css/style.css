@@ -1,0 +1,32 @@
+body {
+    margin: 2% 7% 7% 7%;
+
+}
+.container{
+    width: 100%;
+}
+h1 {
+    display: grid;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.test {
+    text-align: center;
+}
+
+.form-control {
+    margin: 0 0 0 40%;
+    text-align: center;
+    width: 21%;
+}
+
+.SubDel {
+    margin: 18px 0 0 41%;
+    text-align: center;
+    width: 228px;
+}
+
+table{
+    margin-bottom: 45px;
+}

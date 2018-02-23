@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<style> #wrapper{padding-top: 121px}</style>
+<div id="wrapper">
+    <div id="container">
+        <div id="welcome">
+            <div id="next">
+                <h2>What's next?</h2>
+                <p>
+                    Read the documentation to learn
+                    <a href="https://symfony.com/doc/{{ constant('Symfony\\Component\\HttpKernel\\Kernel::VERSION')[:3] }}/page_creation.html">
+                        How to create your first page in Symfony
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+    {% endblock %}
+
