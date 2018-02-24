@@ -1,6 +1,3 @@
-/**
- * Created by Christopher on 23/02/2018.
- */
 var gulp = require('gulp');
 var csso = require('gulp-csso');
 var concat = require('gulp-concat');
@@ -8,26 +5,15 @@ var uglify = require('gulp-uglify');
 var sourcemaps = require('gulp-sourcemaps');
 var watch = require('gulp-watch');
 var autoprefixer = require('gulp-autoprefixer');
-var sass = require('gulp-sass');
 
 var src = 'web/';
-var dist2 = 'web/dist2';
+var dist = 'web/dist';
 
-gulp.task('sass', function () {
-    return gulp.src(src + 'sass/styles.scss')
-        .pipe(autoprefixer({
-            browsers :['last 3 versions'],
-            cascade : false
-        }))
-        .pipe(sourcemaps.init())
-        .pipe(sass().on('error', sass.logError))
-        .pipe(sourcemaps.write())
-        .pipe(gulp.dest(dist2));
-});
-
-gulp.task('minify', function(){
+gulp.task('css', function(){
     return gulp.src([
-        'web/dist2/styles.css',
+        'web/css/bootstrapCSS/bootstrap.css',
+        'web/css/style.css'
+
     ])
         .pipe(autoprefixer({
             browsers :['last 3 versions'],
@@ -39,7 +25,7 @@ gulp.task('minify', function(){
             sourceMap: true,
             debug: true
         }))
-        .pipe(gulp.dest(dist2))
+        .pipe(gulp.dest(dist))
 });
 
 gulp.task('js', function () {
@@ -51,15 +37,14 @@ gulp.task('js', function () {
     ])
         .pipe(concat('script.js'))
         .pipe(uglify())
-        .pipe(gulp.dest(dist2))
+        .pipe(gulp.dest(dist))
 });
 
-
-gulp.task('dev', ['sass', 'js']);
-gulp.task('prod', ['dev', 'minify']);
-
 gulp.task('watch', function () {
-    gulp.watch(src + 'sass/styles.scss', ['sass']);
+    gulp.watch(
+        ['web/css/bootstrapCSS/bootstrap.css',
+            'web/css/style.css'
+        ], ['css']);
     gulp.watch([
         'web/js/Jquery/jquery-3.3.1.js',
         'web/js/bootstrapJS/bootstrap.js',
@@ -68,5 +53,9 @@ gulp.task('watch', function () {
     ], ['js']);
 });
 
+gulp.task('default', ['css', 'js']);
 
-gulp.task('default', ['dev']);
+
+
+
+
