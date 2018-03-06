@@ -1,0 +1,62 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Dragon ball z{% endblock %}
+
+{% block stylesheets %}
+
+    <link rel="stylesheet" href="{{ asset('css/bootstrapCSS/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/dbz.css') }}">
+
+{% endblock %}
+
+{% block header %}{% endblock %}
+
+{% block body %}
+
+    {% block video %}{% include ":Dragon ball z:video.html.twig" %}{% endblock %}
+
+    <div class="container conteneur1">
+        <div class="row block1">
+            <div class="col-12 cols1 ">
+                <h1 class="hidden">DRAGON BALL SUPER</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container conteneur2">
+        <div class="row block2">
+            <div class="col-4 cols2">
+
+            </div>
+            <div class="col-4 cols3">
+            </div>
+            <div class="col-4 cols4">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container conteneur3">
+        <div class="row block3">
+            <div class="col-4 cols5">
+                <button id="my-btn2" class="btn-style">
+                    <img id="play1" class="img-fluid play" alt="" title="" src="{{ asset('images/boule.png') }}">
+                </button>
+            </div>
+            <div class="col-4 cols6"></div>
+            <div class="col-md-4 cols7">
+                <button onclick="setCurTime()" id="my-btn"  class="btn-style">
+                    <img id="play2" class="img-fluid play" alt="" title="" src="{{ asset('images/boule.png') }}">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container conteneur4">
+        <div class="row block4">
+            <div class="col-12 cols8"></div>
+        </div>
+    </div>
+
+{% endblock %}
+

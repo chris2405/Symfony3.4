@@ -11,8 +11,8 @@ var dist = 'web/dist';
 
 gulp.task('css', function(){
     return gulp.src([
-        'web/css/bootstrapCSS/bootstrap.css',
-        'web/css/style.css'
+        'web/ExempleCSS/bootstrapCSS/bootstrap.css',
+        'web/ExempleCSS/style.css'
 
     ])
         .pipe(autoprefixer({
@@ -42,8 +42,8 @@ gulp.task('js', function () {
 
 gulp.task('watch', function () {
     gulp.watch(
-        ['web/css/bootstrapCSS/bootstrap.css',
-            'web/css/style.css'
+        ['web/ExempleCSS/bootstrapCSS/bootstrap.css',
+            'web/ExempleCSS/style.css'
         ], ['css']);
     gulp.watch([
         'web/js/Jquery/jquery-3.3.1.js',

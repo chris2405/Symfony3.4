@@ -9,37 +9,19 @@
         <link rel="stylesheet" href="{{ asset('css/bootstrapCSS/bootstrap.css') }}">
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
-        {#<link rel="stylesheet" href="{{ asset('dist/styles.css') }}">#}
+        {#<link rel="stylesheet" href="{{ asset('dist/styles') }}">#}
 
     {% endblock %}
 
+    {% block stylesheets2 %}{% endblock %}
+
 </head>
+
 <body>
 
-<style>
-    ul > li {
-        display: inline-block;
-        padding-right: 21px;
-        text-align: center;
-        padding-bottom: 15px;
-    }
-    ul{  text-align: center;  }
-</style>
+{% block header %}{% include ":default:header.html.twig" %}{% endblock %}
 
-<ul>
-    <li><a href="{{ path('homepage') }}">HomePage</a></li>
-    <li><a href="{{ path('my') }}">My Page</a></li>
-    <li><a href="{{ path('bootstrap') }}">Bootstrap</a></li>
-    <li><a href="{{ path('entreprise_new') }}">Ajouter entreprise</a></li>
-    <li><a href="{{ path('entreprise_show') }}">Tableau</a></li>
-    <li><a href="{{ path('test') }}">Page de Test</a></li>
-
-</ul>
-
-{% block body %}
-
-
-{% endblock %}
+{% block body %}{% endblock %}
 
 {% block javascripts %}
 
@@ -52,6 +34,7 @@
 
 {% endblock %}
 
+{% block javascripts2 %}{% endblock %}
 
 </body>
 </html>

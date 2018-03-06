@@ -11,13 +11,20 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 class DefaultController extends Controller
 {
     /**
-     * @Route("/",name="bootstrap")
+     * @Route("/bootstrap",name="bootstrap")
      */
     public function IndexAction()
     {
-        return $this->render('@My/Default/index.html.twig');
+        return $this->render('@My/bootstrap.html.twig');
     }
 
+    /**
+     * @Route("/dbz", name="dbz")
+     */
+    public function dbz()
+    {
 
+        return $this->render('Dragon ball z/dbz.html.twig');
+    }
 }
 

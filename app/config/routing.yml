@@ -3,9 +3,8 @@ app:
     type: annotation
 
 my:
-    resource: "@MyBundle/Controller/DefaultController.php"
+    resource: "@MyBundle/Controller/"
     type: annotation
-    prefix: /bootstrap
 
 test:
     resource: "@MyBundle/Controller/TestController.php"

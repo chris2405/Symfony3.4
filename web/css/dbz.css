@@ -1,0 +1,125 @@
+/*[class*="container"] {*/
+    /*border: 1px solid green;*/
+/*}*/
+/*[class*="row"]{*/
+/*border: 1px solid #f7ffec;*/
+/*}*/
+/*[class*="col-"]{*/
+    /*border: 1px solid red;*/
+/*}*/
+
+html{
+ background-color: orange;
+}
+
+body, html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    margin: 0 7% 0 7%;
+    background-image: url(../images/dragonballz.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.container{
+    min-width: 100%;
+}
+
+h1 {
+    margin: 0;
+    color: orange;
+    font-family: 'UTMNeutra', sans-serif;
+    text-align: center;
+}
+
+img#play1,img#play2{
+    min-width:100px;
+    min-height:100px;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.hidden{
+   /*display: none;*/
+    visibility: hidden;
+}
+
+.btn-style
+{
+    background: none;
+    cursor: pointer;
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+
+/*button:checked:visited:active:focus:link:enabled{*/
+    /*background: none;*/
+    /*text-decoration: none;*/
+    /*color: #FFFFFF;*/
+    /*cursor: pointer;*/
+    /*box-shadow: none;*/
+    /*border: none;*/
+/*}*/
+
+.conteneur1{
+    min-height: 12%;
+}
+
+.conteneur2{
+    min-height: 48%;
+}
+
+.conteneur3{
+    min-height: 15%;
+
+}
+.conteneur4{
+    min-height: 25%;
+}
+
+.cols7{
+     padding: 0 130px 0 130px;
+ }
+
+.cols5{
+    padding: 0 130px 0 130px;
+}
+
+#bgvid{
+    width: 80%;
+    height: 100%;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+video{
+    display:block;
+    margin: 52px auto ;
+    min-height: 100%;
+
+}
+
+.cross {
+    float: right;
+    margin-top: 1rem;
+    position: absolute;
+    right: 0;
+    padding-right: 10rem;
+    cursor: pointer;
+    z-index: 1000;
+}
